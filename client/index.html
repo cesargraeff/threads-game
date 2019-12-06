@@ -17,7 +17,60 @@
 </head>
 <body>
 
-    
-    
+    <canvas id="canvas"></canvas>
+
+    <div class="row" id="params">
+        <div class="col">
+            <div class="card" style="max-width: 200px;">
+                <div class="card-header text-center">
+                    <b>Arraste Aqui</b>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="calorias">Calorias Inicial</label>
+                                <input class="form-control text-center" type="number" name="" id="calorias" value="200">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <a class="btn btn-danger btn-block text-white add" type="SHARK">
+                                ADICIONAR TUBARÃO
+                            </a>
+                            <a class="btn btn-warning btn-block text-white add" type="SEAL">
+                                ADICIONAR FOCA
+                            </a>
+                            <a class="btn btn-primary btn-block text-white add" type="FISH">
+                                ADICIONAR PEIXE
+                            </a>
+                            <a class="btn btn-success btn-block text-white add" type="SEAWEED">
+                                ADICIONAR ALGA
+                            </a>
+                        </div>
+                    </div>
+
+                    <img src="img/alga.png" style="display: none;" />
+                    <img src="img/foca.png" style="display: none;" />
+                    <img src="img/peixe.png" style="display: none;" />
+                    <img src="img/tubarao.png" style="display: none;" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="totais">
+        <div class="row">
+            <div class="col">
+                <p> <b>TOTAL:</b> <span id="total"></span></p>
+                <p> <b>TEMPO:</b> <span id="timer"></span></p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
